@@ -1,8 +1,6 @@
-# React + Vite
+# Pricing section- [Live link](https://pd-pricing-section.netlify.app/)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripton
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+    1. I converted figma design into pixel perfect template using  Html and tailwindcss.
+    2. I used React to add functionality like toggle into two buttons and card active state.
