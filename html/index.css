@@ -1,0 +1,199 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Satoshi", sans-serif;
+  /* Only works if there is nothing absolutely positioned in relation to body */
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+
+/**************************/
+/* GENRAL REUSABLE COMPONENTS */
+/**************************/
+
+.container {
+  /* 1140px */
+
+  max-width: 128rem;
+  margin: 5rem auto;
+}
+
+.text-sm {
+  font-size: 0.875rem /* 14px */;
+  line-height: 1.25rem /* 20px */;
+}
+.text-center {
+  text-align: center;
+}
+.font-medium {
+  font-weight: 500;
+}
+.border {
+  border: 1px solid gray;
+}
+
+.p-1 {
+  padding: 0.4rem /* 4px */;
+}
+.p-8 {
+  padding: 3.2rem /* 32px */;
+}
+.pb-8 {
+  padding-bottom: 2rem /* 32px */;
+}
+
+.my-8 {
+  margin-top: 3.2rem /* 32px */;
+  margin-bottom: 3.2rem /* 32px */;
+}
+.rounded-full {
+  border-radius: 9999px;
+}
+
+/* flex style  */
+.flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.items-center {
+  align-items: center;
+}
+
+/* grid  */
+.grid {
+  display: grid;
+}
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.gap-6 {
+  gap: 2.5rem /* 24px */;
+}
+
+/* header  */
+.heading-primary {
+  font-size: 5.6rem;
+  line-height: 1.05;
+  font-weight: 500;
+  text-align: center;
+}
+/* nav  */
+.nav-button-container {
+  background: #eeedf0;
+}
+
+.nav-button {
+  padding: 1.2rem 2.8rem 1.2rem 2.8rem;
+  font-weight: 600;
+  color: #000;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  text-align: center;
+}
+.nav-active {
+  background: #000;
+  color: #fff;
+}
+
+/* price card style  */
+.price-card {
+  padding: 3.2rem /* 32px */;
+  border: 1px solid rgb(209 213 219);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.price-card-title {
+  font-weight: 500;
+  font-size: 3.6rem /* 36px */;
+  line-height: 4rem /* 40px */;
+}
+.price-card-text {
+  font-weight: 400;
+
+  font-size: 1.5rem; /* 15px */
+  line-height: 2.5rem; /* 40px */
+}
+.price-card-price {
+  font-size: 4.4rem /* 44px */;
+  line-height: 5.4rem; /* 54px */
+  font-weight: 700;
+}
+.price-card-price-subtitle {
+  font-size: 1.5rem /* 15px */;
+  line-height: 1.5rem; /* 25px */
+  font-weight: 400;
+}
+.price-card-btn {
+  border: none;
+  width: 100%;
+  background: #724fd8;
+  font-weight: 700;
+  font-size: 1.5rem /* 15px */;
+  line-height: 2.5rem; /* 15px */
+  padding: 14px 28px 14px 28px;
+}
+.price-card-btn-color {
+  background: #724fd8;
+  color: #fff;
+}
+.price-card-btn-active {
+  background: #fff;
+  color: #724fd8;
+}
+
+.price-card-info {
+  font-weight: 400;
+  font-size: 1.5rem /* 15px */;
+  line-height: 1.5rem /* 15px */;
+}
+li:nth-child(n) {
+  margin-bottom: 12px;
+}
+
+.price-card-info li {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.active {
+  background: #724fd8;
+  color: #fff;
+}
+
+@media (min-width: 460px) {
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    margin: 0 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-cols-1 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin: 0 4rem;
+  }
+}
+@media (min-width: 1024px) {
+  .grid-cols-1 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin: 0 6rem;
+  }
+}
